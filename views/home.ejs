@@ -1,0 +1,265 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Farmer's Marketplace</h1>
+    <p>Your direct link between farmers and consumers. Enjoy fresh produce and fair prices—all without middlemen.</p>
+    <div class="hero-buttons">
+      <a href="/buy" class="btn">Buy Crops</a>
+      <a href="/sell" class="btn secondary">Sell Crops</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="container">
+    <div class="feature">
+      <div class="icon">
+        <!-- Replace with your own image or icon -->
+        <img src="https://t4.ftcdn.net/jpg/03/20/39/85/360_F_320398572_P4HHAy08qiRKI9b7GgsHDKy15qwgjlTy.jpg" alt="Fresh Produce">
+      </div>
+      <h3>Fresh Produce</h3>
+      <p>Only the best quality produce straight from local farms.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/027/727/877/small/asian-woman-and-man-farmer-working-together-in-organic-hydroponic-salad-vegetable-farm-using-tablet-inspect-quality-of-lettuce-in-greenhouse-garden-photo.jpg" alt="Direct Connection">
+      </div>
+      <h3>Direct Connection</h3>
+      <p>Connect directly with farmers—no middlemen, no extra costs.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">
+        <img src="https://thumbs.dreamstime.com/b/rising-food-costs-vegetable-prices-soar-352478179.jpg" alt="Fair Prices">
+      </div>
+      <h3>Fair Prices</h3>
+      <p>Experience transparency and fair prices benefiting everyone.</p>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-number">1</span>
+        <h3>Sign Up</h3>
+        <p>Create an account to join our thriving community of farmers and buyers.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">2</span>
+        <h3>List or Browse Crops</h3>
+        <p>Farmers list their available crops while buyers browse and choose what they need.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <h3>Connect Directly</h3>
+        <p>Negotiate and transact directly—ensuring transparency and fair deals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+
+
+
+<!-- Embedded CSS for Home Page -->
+<style>
+  /* Hero Section */
+  .hero {
+    background: url('https://static.vecteezy.com/system/resources/previews/031/696/054/non_2x/sprawling-agricultural-farm-featuring-fields-of-crops-ai-generated-photo.jpg') center/cover no-repeat;
+    position: relative;
+    padding: 150px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 62, 80, 0.6);
+    z-index: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-buttons .btn:hover {
+    background: #d35400;
+  }
+  
+  .btn.secondary {
+    background: transparent;
+    border: 2px solid #f39c12;
+  }
+  
+  .btn.secondary:hover {
+    background: #f39c12;
+    color: #fff;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 80px 20px;
+    background: #ecf0f1;
+    text-align: center;
+  }
+  
+  .features .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature .icon {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .feature .icon img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .feature h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* How It Works Section */
+  .how-it-works {
+    padding: 80px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .how-it-works .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);
+  }
+  
+  .step-number {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .step h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #2c3e50;
+  }
+  
+  .step p {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .features .container,
+    .how-it-works .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .steps {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
